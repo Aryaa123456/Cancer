@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".FiturActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        android:weightSum="10"
+        app:layout_constraintBaseline_toBaselineOf="parent">
+
+        <RelativeLayout
+            android:layout_width="408dp"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <TextView
+                android:layout_width="500dp"
+                android:layout_height="150dp"
+                android:text="FITUR"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"/>
+
+        </RelativeLayout>
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_weight="7.5"
+            android:columnCount="1"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:padding="15dp">
+
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/white"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="330dp"
+                    android:layout_height="600dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="544dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="100dp"
+                        android:text="
+•	Age: Nilai bilangan bulat yang mewakili usia pasien, berkisar antara 20 hingga 80, 1000 non-null   int64\n
+\n
+•	Gender: Nilai biner mewakili gender, 1000 non-null   int64  \n
+\n
+•	BMI: Nilai berkelanjutan yang mewakili Indeks Massa Tubuh, berkisar antara 15 hingga 40, 1000 non-null   int64 \n
+\n
+•	Smooking: Nilai biner menunjukkan status merokok, 1000 non-null   int64 \n
+\n
+•   GeneticRisk: Nilai kategori yang mewakili tingkat risiko genetik untuk kanker, 1000 non-null   int64 \n
+\n
+•	PhysicalActivity: Nilai berkelanjutan yang mewakili jumlah jam per minggu yang dihabiskan untuk aktivitas fisik, 1000 non-null   int64 \n
+\n
+•	AlcoholIntake: Nilai berkelanjutan yang mewakili jumlah unit alkohol yang dikonsumsi per minggu, 1000 non-null   int64 \n
+\n
+•	CancerHistory: Nilai biner yang menunjukkan apakah pasien memiliki riwayat kanker pribadi, 1000 non-null   int64 \n
+\n
+•	Diagnosis: Nilai biner menunjukkan status diagnosis kanker, 1000 non-null   object
+"
+                        android:textColor="@color/black"
+                        android:textSize="13.5sp"
+                        android:textStyle="italic">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
